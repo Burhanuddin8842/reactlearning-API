@@ -4,7 +4,10 @@ import EcomAPI from './EcomAPI'
 
 const App = () => {
   return (
+    <div className="w-full">
+
     <EcomAPI />
+    </div>
   )
 }
 

@@ -12,15 +12,18 @@ const EcomAPI = () => {
     useEffect(()=>{
         DataDestructuring()
     }, [ ])
-    // console.log(data)
+    console.log(data)
 
   return (
     <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mx-auto w-full p-2 container ">
+
     {data?.map((items,index)=>{
         return(
             <SingleEcom {...items} key={items.id}/>
         )
     })}
+    </div>
     </>
   )
 }
